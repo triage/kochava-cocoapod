@@ -3,8 +3,6 @@ Pod::Spec.new do |s|
   s.version      = "20140714"
   s.summary      = "Kochava is a leading mobile attribution and analytics platform."
   
-  s.homepage     = "https://github.com/ericdmann/kochava"
-
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
@@ -13,9 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ericdmann/kochava.git", :commit => "7e3ebf85b92d4c5e65f317ae5d073888b2e625ae" }
 
   #s.source_files  = "*.{h,a}"
+  s.platform      = :ios, '5.0'
 
-#	s.platform = :ios, "5.0”
-#	s.source_files = "include/*.h/*.a"
 #	s.public_header_files = "include/*.h”
 	
 #	s.preserve_paths = "libTrackAndAd.a”
