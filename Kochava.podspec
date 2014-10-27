@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "Kochava" => "support@kochava.com" }
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/ericdmann/kochava.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/ericdmann/kochava.git", :branch => "master" }
   s.source_files  = '*.{a,m,h}'
-  s.private_header_files =  '*.h'
-  s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'Accelerate', 'CoreGraphics', 'QuartzCore'
-  s.requires_arc = true
+  #s.private_header_files =  '*.h'
+  #s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'Accelerate', 'CoreGraphics', 'QuartzCore'
+  #s.requires_arc = true
 end
