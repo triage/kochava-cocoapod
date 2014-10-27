@@ -24,6 +24,6 @@ s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
   s.source       = { :git => "https://github.com/ericdmann/kochava.git", :tag => "20140714" }
   s.source_files  = '*.{a,m,h}'
   #s.private_header_files =  '*.h'
-  #s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'Accelerate', 'CoreGraphics', 'QuartzCore'
+  s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'AdSupport', 'libTrackAndAd'
   #s.requires_arc = true
 end
