@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Kochava"
-  s.version      = "20140715"
+  s.version      = "20140714"
   s.summary      = "Kochava is a leading mobile attribution and analytics platform."
   s.homepage     = "http://kochava.com"
 
@@ -21,9 +21,9 @@ s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
 
   s.author       = { "Kochava" => "support@kochava.com" }
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/ericdmann/kochava.git", :tag => "20140715" }
+  s.source       = { :git => "https://github.com/ericdmann/kochava.git", :tag => "20140714" }
   s.source_files  = '*.{a,m,h}'
   #s.private_header_files =  '*.h'
   s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'AdSupport', 'libTrackAndAd'
-  #s.requires_arc = true
+ s.requires_arc = false
 end
