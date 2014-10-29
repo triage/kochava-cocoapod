@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Kochava"
-  s.version      = "20141027a"
+  s.version      = "20141027.1"
   s.summary      = "Kochava is a leading mobile attribution and analytics platform."
   s.homepage     = "http://kochava.com"
 
