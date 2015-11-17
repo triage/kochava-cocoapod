@@ -52,7 +52,6 @@
 - (void) swiftSetLimitAdTracking:(bool)limitAdTracking;
 - (NSString*) swiftRetrieveAttribution;
 - (void) swiftSendDeepLink:(id)url :(id)sourceApplication;
-- (bool) swiftPresentInitAd;
 
 
 #pragma mark - ObjC
@@ -73,7 +72,6 @@
 - (void) sendDeepLink:(NSURL*)url :(NSString*)sourceApplication;
 
 - (NSString*) getKochavaDeviceId;
-- (bool) presentInitAd;
 
 // Apple Watch
 - (void) handleWatchEvents;
@@ -91,29 +89,6 @@
 @protocol KochavaTrackerClientDelegate <NSObject>
 @optional
 - (void) Kochava_attributionResult:(NSDictionary*)attributionResult;
-- (void) Kochava_presentInitAd:(bool)presentInitAdResult;
-@end
-
-
-
-#pragma mark - -------------------------------------
-#pragma mark - Ad Client
-
-@protocol KochavaAdClientDelegate;
-
-@interface KochavaAdClient : UIView <UIWebViewDelegate, UIGestureRecognizerDelegate, KochavaNetworkAccessDelegate>
-
-- (void) displayAdWebView:(UIViewController*)callingController :(UIView*)callingView :(bool)isInterstitial;
-- (void) presentClickAd;
-
-@property (nonatomic, assign) id <KochavaAdClientDelegate> adDelegate;
-@end
-
-@protocol KochavaAdClientDelegate <NSObject>
-@optional
-- (void) Kochava_adLoaded:(KochavaAdClient*)adView :(bool)isInterstitial;
-- (void) Kochava_fullScreenAdWillLoad:(KochavaAdClient*)adView;
-- (void) Kochava_fullScreenAdDidUnload:(KochavaAdClient*)adView;
 
 @end
 
