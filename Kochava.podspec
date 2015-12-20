@@ -30,7 +30,6 @@ Pod::Spec.new do |s|
   s.requires_arc = false
 
   s.preserve_paths = 'libTrackAndAd.a'
-  s.library = 'TrackAndAd'
-  s.public_header_files = '*.h'
+  s.library = 'libTrackAndAd.a'
 
 end
