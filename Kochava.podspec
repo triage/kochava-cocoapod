@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = { "Kochava" => "support@kochava.com" }
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '8.0'
   s.source       = {
     :git => "https://github.com/Kochava/kochava-cocoapod.git",
     :tag => version,
@@ -30,6 +30,6 @@ Pod::Spec.new do |s|
   s.requires_arc = false
 
   s.preserve_paths = 'libTrackAndAd.a'
-  s.library = 'libTrackAndAd.a'
+  s.library = 'TrackAndAd'
 
 end
